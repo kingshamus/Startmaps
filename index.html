@@ -74,11 +74,19 @@
 
     <h1>Community Projects</h1>
     <div>
-        <p><a href="https://tekkenratings.tristanmelton.com/" target="_blank">Tekken 8 Tournament Ratings by Tristan Melton</a></p>
-        <p><a href="https://wank.wavu.wiki/" target="_blank">Wavu Wank by 6weetbix</a></p>
-        <p><a href="https://kekken.com/" target="_blank">Kekken by (Please let me know the Author)</a></p>
-        <p><a href="https://rbnorway.org/t8-frame-data/" target="_blank"> Tekken 8 Frame Data by RBNorway</a></p>
+        <p><a href="https://tekkenratings.tristanmelton.com/" onclick="openInBrowser(event)">Tekken 8 Tournament Ratings by Tristan Melton</a></p>
+        <p><a href="https://wank.wavu.wiki/" onclick="openInBrowser(event)">Wavu Wank by 6weetbix</a></p>
+        <p><a href="https://kekken.com/" onclick="openInBrowser(event)">Kekken by (Please let me know the Author)</a></p>
+        <p><a href="https://rbnorway.org/t8-frame-data/" onclick="openInBrowser(event)"> Tekken 8 Frame Data by RBNorway</a></p>
     </div>
+
+    <script>
+        function openInBrowser(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const url = event.target.href;
+            window.open(url, '_system'); // Open in system default browser
+        }
+    </script>
 </body>
 
 </html>
